@@ -1,0 +1,29 @@
+PODS:
+  - MenuBar (1.0.0)
+  - Omnibus (1.0.0)
+
+DEPENDENCIES:
+  - MenuBar (from `https://github.com/IgorMuzyka/MenuBar.git`)
+  - Omnibus (from `https://github.com/IgorMuzyka/Omnibus.git`)
+
+EXTERNAL SOURCES:
+  MenuBar:
+    :git: https://github.com/IgorMuzyka/MenuBar.git
+  Omnibus:
+    :git: https://github.com/IgorMuzyka/Omnibus.git
+
+CHECKOUT OPTIONS:
+  MenuBar:
+    :commit: c6d5d4cb316395bbfa11a02122cae3cc65b485f9
+    :git: https://github.com/IgorMuzyka/MenuBar.git
+  Omnibus:
+    :commit: b0e8e3099ab65b036bcef8cd31d29b4eebb0ecbe
+    :git: https://github.com/IgorMuzyka/Omnibus.git
+
+SPEC CHECKSUMS:
+  MenuBar: 7cb869f861d2b116f6f039cf2bf3b2366fa8e31e
+  Omnibus: 6524e0009ec825306b42b6513a522ef289c90934
+
+PODFILE CHECKSUM: eb6c8f6d922fcb288bc2893a0310a1d69314fb72
+
+COCOAPODS: 1.6.0.beta.2

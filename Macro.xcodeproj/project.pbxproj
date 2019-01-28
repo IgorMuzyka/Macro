@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09BA8B4D038DB15B41ED9E7C /* libPods-Macro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30FF83452E0425F0269503 /* libPods-Macro.a */; };
+		780D6CFE214CA3E60084DAAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780D6CFD214CA3E60084DAAD /* Assets.xcassets */; };
+		780D6D01214CA3E60084DAAD /* MainMenuLauncher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 780D6CFF214CA3E60084DAAD /* MainMenuLauncher.xib */; };
+		780D6D08214CA4AD0084DAAD /* MacroLauncher.app in Copy Files */ = {isa = PBXBuildFile; fileRef = 780D6CF9214CA3E50084DAAD /* MacroLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		780D6D0C214CA6390084DAAD /* MacroLauncherAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D6CFB214CA3E50084DAAD /* MacroLauncherAppDelegate.swift */; };
+		78168EDF211907AF008B31B5 /* FrontmostApplicationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168EC5211907AE008B31B5 /* FrontmostApplicationWatcher.swift */; };
+		78168EE2211907AF008B31B5 /* EventInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168EC9211907AE008B31B5 /* EventInterceptor.swift */; };
+		78168EE3211907AF008B31B5 /* MacroManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168ECA211907AE008B31B5 /* MacroManager.swift */; };
+		78168EE4211907AF008B31B5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168ECB211907AE008B31B5 /* Coordinator.swift */; };
+		78168EE5211907AF008B31B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168ECD211907AE008B31B5 /* AppDelegate.swift */; };
+		78168EE6211907AF008B31B5 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168ECF211907AE008B31B5 /* Definitions.swift */; };
+		78168EE8211907AF008B31B5 /* CGKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168ED2211907AE008B31B5 /* CGKeyboard.swift */; };
+		78168EE9211907AF008B31B5 /* KeyboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168ED4211907AF008B31B5 /* KeyboardProtocol.swift */; };
+		78168EEA211907AF008B31B5 /* EventInterceptorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168ED5211907AF008B31B5 /* EventInterceptorProtocol.swift */; };
+		78168EEB211907AF008B31B5 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168ED6211907AF008B31B5 /* CoordinatorProtocol.swift */; };
+		78168EED211907AF008B31B5 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168ED9211907AF008B31B5 /* MainMenu.swift */; };
+		78168EEE211907AF008B31B5 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168EDB211907AF008B31B5 /* AboutView.swift */; };
+		78168EFA21192336008B31B5 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78168EF921192336008B31B5 /* Convenience.swift */; };
+		7827E083214C9C4C00793EC6 /* Launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7827E082214C9C4C00793EC6 /* Launcher.swift */; };
+		784540AB211CFF8400E57B77 /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7845409E211CFF8400E57B77 /* Shortcut.swift */; };
+		784540AC211CFF8400E57B77 /* Glyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7845409F211CFF8400E57B77 /* Glyph.swift */; };
+		784540AD211CFF8400E57B77 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784540A0211CFF8400E57B77 /* Modifiers.swift */; };
+		784540AE211CFF8400E57B77 /* HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784540A1211CFF8400E57B77 /* HotKey.swift */; };
+		784540B1211CFF8400E57B77 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784540A6211CFF8400E57B77 /* Event.swift */; };
+		784540B2211CFF8400E57B77 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784540A7211CFF8400E57B77 /* Flags.swift */; };
+		784540B3211CFF8400E57B77 /* KeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784540A8211CFF8400E57B77 /* KeyCode.swift */; };
+		784540B7211CFFCC00E57B77 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784540B5211CFFCC00E57B77 /* State.swift */; };
+		784540B8211CFFCC00E57B77 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784540B6211CFFCC00E57B77 /* Macro.swift */; };
+		7868DB4E21488FCA00FFFAF3 /* PreferencesMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868DB4D21488FCA00FFFAF3 /* PreferencesMenu.swift */; };
+		78762BC0214C9F0000AA70B9 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78762BBF214C9F0000AA70B9 /* ServiceManagement.framework */; };
+		7883BBE421110BAB00820262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7883BBE321110BAB00820262 /* Assets.xcassets */; };
+		7883BBE721110BAB00820262 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7883BBE521110BAB00820262 /* MainMenu.xib */; };
+		78987DBE217689F600A11FA1 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DBD217689F600A11FA1 /* MenuBar.swift */; };
+		78987DC32176951F00A11FA1 /* TerminateApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DC22176951F00A11FA1 /* TerminateApplication.swift */; };
+		78987DC52176965900A11FA1 /* RelaunchApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DC42176965900A11FA1 /* RelaunchApplication.swift */; };
+		78987DC7217696D600A11FA1 /* RecordOrStopMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DC6217696D600A11FA1 /* RecordOrStopMacro.swift */; };
+		78987DC92176977C00A11FA1 /* PlayMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DC82176977C00A11FA1 /* PlayMacro.swift */; };
+		78987DCD2176992400A11FA1 /* PresentAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DCC2176992400A11FA1 /* PresentAbout.swift */; };
+		78987DD1217699B000A11FA1 /* SendFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DD0217699B000A11FA1 /* SendFeedback.swift */; };
+		78987DD3217699FA00A11FA1 /* ToggleRunAtStartup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DD2217699FA00A11FA1 /* ToggleRunAtStartup.swift */; };
+		78987DD721769E2A00A11FA1 /* InitialAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DD621769E2A00A11FA1 /* InitialAssembly.swift */; };
+		78987DD921769E3E00A11FA1 /* RunningAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DD821769E3E00A11FA1 /* RunningAssembly.swift */; };
+		78987DDB2176A1FE00A11FA1 /* HotKeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DDA2176A1FE00A11FA1 /* HotKeyService.swift */; };
+		78987DDD2176A70200A11FA1 /* NegotiateAccessibilityAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DDC2176A70200A11FA1 /* NegotiateAccessibilityAccess.swift */; };
+		78987DDF2176A72500A11FA1 /* OpenAccessibilityPreferencePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DDE2176A72500A11FA1 /* OpenAccessibilityPreferencePane.swift */; };
+		78987DE12176A75300A11FA1 /* PromptUserToOpenPreferencePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DE02176A75300A11FA1 /* PromptUserToOpenPreferencePane.swift */; };
+		78987DE32176A77A00A11FA1 /* PromptUserToConfirmAccessibilityAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78987DE22176A77A00A11FA1 /* PromptUserToConfirmAccessibilityAccess.swift */; };
+		78EA2D5E2149F7F800D6C5EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA2D5D2149F7F800D6C5EF /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		780D6D07214CA49A0084DAAD /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				780D6D08214CA4AD0084DAAD /* MacroLauncher.app in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02FB7642EA5D908EC8F41D91 /* Pods-VirtualKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualKeyboard/Pods-VirtualKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		564CC7FCC4B0DA5A573E6DA5 /* Pods-VirtualKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualKeyboard/Pods-VirtualKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		674E35E35F689000AEDBE6B8 /* Pods-Macro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Macro/Pods-Macro.release.xcconfig"; sourceTree = "<group>"; };
+		780225B321126FCD00F74262 /* Macro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Macro.entitlements; sourceTree = "<group>"; };
+		780D6CF9214CA3E50084DAAD /* MacroLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		780D6CFB214CA3E50084DAAD /* MacroLauncherAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroLauncherAppDelegate.swift; sourceTree = "<group>"; };
+		780D6CFD214CA3E60084DAAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		780D6D00214CA3E60084DAAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenuLauncher.xib; sourceTree = "<group>"; };
+		780D6D02214CA3E60084DAAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780D6D03214CA3E60084DAAD /* MacroLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacroLauncher.entitlements; sourceTree = "<group>"; };
+		78168EC5211907AE008B31B5 /* FrontmostApplicationWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontmostApplicationWatcher.swift; sourceTree = "<group>"; };
+		78168EC9211907AE008B31B5 /* EventInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInterceptor.swift; sourceTree = "<group>"; };
+		78168ECA211907AE008B31B5 /* MacroManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroManager.swift; sourceTree = "<group>"; };
+		78168ECB211907AE008B31B5 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		78168ECD211907AE008B31B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78168ECF211907AE008B31B5 /* Definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
+		78168ED2211907AE008B31B5 /* CGKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGKeyboard.swift; sourceTree = "<group>"; };
+		78168ED4211907AF008B31B5 /* KeyboardProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardProtocol.swift; sourceTree = "<group>"; };
+		78168ED5211907AF008B31B5 /* EventInterceptorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInterceptorProtocol.swift; sourceTree = "<group>"; };
+		78168ED6211907AF008B31B5 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		78168ED9211907AF008B31B5 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		78168EDB211907AF008B31B5 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		78168EF921192336008B31B5 /* Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
+		781A04BF211EF6B000962FA5 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		7827E082214C9C4C00793EC6 /* Launcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launcher.swift; sourceTree = "<group>"; };
+		7845409E211CFF8400E57B77 /* Shortcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shortcut.swift; sourceTree = "<group>"; };
+		7845409F211CFF8400E57B77 /* Glyph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Glyph.swift; sourceTree = "<group>"; };
+		784540A0211CFF8400E57B77 /* Modifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		784540A1211CFF8400E57B77 /* HotKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKey.swift; sourceTree = "<group>"; };
+		784540A6211CFF8400E57B77 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		784540A7211CFF8400E57B77 /* Flags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		784540A8211CFF8400E57B77 /* KeyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCode.swift; sourceTree = "<group>"; };
+		784540B5211CFFCC00E57B77 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		784540B6211CFFCC00E57B77 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		7868DB4D21488FCA00FFFAF3 /* PreferencesMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesMenu.swift; sourceTree = "<group>"; };
+		78762BBF214C9F0000AA70B9 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		7883BBDE21110BA900820262 /* Macro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7883BBE321110BAB00820262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7883BBE621110BAB00820262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7883BBE821110BAB00820262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7883BBF221110C1D00820262 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7883BBF421110C2300820262 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		78987DBD217689F600A11FA1 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		78987DC22176951F00A11FA1 /* TerminateApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminateApplication.swift; sourceTree = "<group>"; };
+		78987DC42176965900A11FA1 /* RelaunchApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaunchApplication.swift; sourceTree = "<group>"; };
+		78987DC6217696D600A11FA1 /* RecordOrStopMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordOrStopMacro.swift; sourceTree = "<group>"; };
+		78987DC82176977C00A11FA1 /* PlayMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMacro.swift; sourceTree = "<group>"; };
+		78987DCC2176992400A11FA1 /* PresentAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAbout.swift; sourceTree = "<group>"; };
+		78987DD0217699B000A11FA1 /* SendFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFeedback.swift; sourceTree = "<group>"; };
+		78987DD2217699FA00A11FA1 /* ToggleRunAtStartup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRunAtStartup.swift; sourceTree = "<group>"; };
+		78987DD621769E2A00A11FA1 /* InitialAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialAssembly.swift; sourceTree = "<group>"; };
+		78987DD821769E3E00A11FA1 /* RunningAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningAssembly.swift; sourceTree = "<group>"; };
+		78987DDA2176A1FE00A11FA1 /* HotKeyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeyService.swift; sourceTree = "<group>"; };
+		78987DDC2176A70200A11FA1 /* NegotiateAccessibilityAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegotiateAccessibilityAccess.swift; sourceTree = "<group>"; };
+		78987DDE2176A72500A11FA1 /* OpenAccessibilityPreferencePane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAccessibilityPreferencePane.swift; sourceTree = "<group>"; };
+		78987DE02176A75300A11FA1 /* PromptUserToOpenPreferencePane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptUserToOpenPreferencePane.swift; sourceTree = "<group>"; };
+		78987DE22176A77A00A11FA1 /* PromptUserToConfirmAccessibilityAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptUserToConfirmAccessibilityAccess.swift; sourceTree = "<group>"; };
+		78EA2D5D2149F7F800D6C5EF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AFFCA62DF6FB261C2E70D82F /* Pods-Macro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Macro/Pods-Macro.debug.xcconfig"; sourceTree = "<group>"; };
+		C615CA1A49E099817053A971 /* libPods-VirtualKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VirtualKeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE30FF83452E0425F0269503 /* libPods-Macro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Macro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		780D6CF6214CA3E50084DAAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7883BBDB21110BA900820262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78762BC0214C9F0000AA70B9 /* ServiceManagement.framework in Frameworks */,
+				09BA8B4D038DB15B41ED9E7C /* libPods-Macro.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		780D6CFA214CA3E50084DAAD /* MacroLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				780D6CFB214CA3E50084DAAD /* MacroLauncherAppDelegate.swift */,
+				780D6CFD214CA3E60084DAAD /* Assets.xcassets */,
+				780D6CFF214CA3E60084DAAD /* MainMenuLauncher.xib */,
+				780D6D02214CA3E60084DAAD /* Info.plist */,
+				780D6D03214CA3E60084DAAD /* MacroLauncher.entitlements */,
+			);
+			path = MacroLauncher;
+			sourceTree = "<group>";
+		};
+		78168EC0211907AE008B31B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				784540A5211CFF8400E57B77 /* Event */,
+				7845409D211CFF8400E57B77 /* HotKey */,
+				784540B4211CFFCC00E57B77 /* Macro */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78168EC4211907AE008B31B5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				78168EC5211907AE008B31B5 /* FrontmostApplicationWatcher.swift */,
+				7827E082214C9C4C00793EC6 /* Launcher.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		78168EC8211907AE008B31B5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				78168EC9211907AE008B31B5 /* EventInterceptor.swift */,
+				78168ECA211907AE008B31B5 /* MacroManager.swift */,
+				78168ECB211907AE008B31B5 /* Coordinator.swift */,
+				78987DDA2176A1FE00A11FA1 /* HotKeyService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		78168ECC211907AE008B31B5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				78168ECD211907AE008B31B5 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		78168ECE211907AE008B31B5 /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				78168ECF211907AE008B31B5 /* Definitions.swift */,
+				78168EF921192336008B31B5 /* Convenience.swift */,
+				78EA2D5D2149F7F800D6C5EF /* Constants.swift */,
+			);
+			path = Convenience;
+			sourceTree = "<group>";
+		};
+		78168ED0211907AE008B31B5 /* Keyboards */ = {
+			isa = PBXGroup;
+			children = (
+				78168ED2211907AE008B31B5 /* CGKeyboard.swift */,
+			);
+			path = Keyboards;
+			sourceTree = "<group>";
+		};
+		78168ED3211907AF008B31B5 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				78168ED4211907AF008B31B5 /* KeyboardProtocol.swift */,
+				78168ED5211907AF008B31B5 /* EventInterceptorProtocol.swift */,
+				78168ED6211907AF008B31B5 /* CoordinatorProtocol.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		78168ED7211907AF008B31B5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				78987DBD217689F600A11FA1 /* MenuBar.swift */,
+				78168ED9211907AF008B31B5 /* MainMenu.swift */,
+				7868DB4D21488FCA00FFFAF3 /* PreferencesMenu.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		78168EDA211907AF008B31B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				78168EDB211907AF008B31B5 /* AboutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7845409D211CFF8400E57B77 /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				784540A0211CFF8400E57B77 /* Modifiers.swift */,
+				7845409E211CFF8400E57B77 /* Shortcut.swift */,
+				7845409F211CFF8400E57B77 /* Glyph.swift */,
+				784540A1211CFF8400E57B77 /* HotKey.swift */,
+			);
+			path = HotKey;
+			sourceTree = "<group>";
+		};
+		784540A5211CFF8400E57B77 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				784540A6211CFF8400E57B77 /* Event.swift */,
+				784540A8211CFF8400E57B77 /* KeyCode.swift */,
+				784540A7211CFF8400E57B77 /* Flags.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		784540B4211CFFCC00E57B77 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				784540B5211CFFCC00E57B77 /* State.swift */,
+				784540B6211CFFCC00E57B77 /* Macro.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		7883BBD521110BA900820262 = {
+			isa = PBXGroup;
+			children = (
+				7883BBE021110BA900820262 /* Macro */,
+				780D6CFA214CA3E50084DAAD /* MacroLauncher */,
+				7883BBDF21110BA900820262 /* Products */,
+				7883BBF121110C1D00820262 /* Frameworks */,
+				8B6EC523F735C8CCEC999921 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7883BBDF21110BA900820262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7883BBDE21110BA900820262 /* Macro.app */,
+				780D6CF9214CA3E50084DAAD /* MacroLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7883BBE021110BA900820262 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				78168ECC211907AE008B31B5 /* App */,
+				78168ED3211907AF008B31B5 /* Abstract */,
+				78168EC0211907AE008B31B5 /* Models */,
+				78168EC8211907AE008B31B5 /* Services */,
+				78168EC4211907AE008B31B5 /* Helpers */,
+				78168ECE211907AE008B31B5 /* Convenience */,
+				78168ED7211907AF008B31B5 /* Menu */,
+				78168EDA211907AF008B31B5 /* Views */,
+				78168ED0211907AE008B31B5 /* Keyboards */,
+				78987DBF217694EF00A11FA1 /* Procedures */,
+				7883BBE321110BAB00820262 /* Assets.xcassets */,
+				7883BBE521110BAB00820262 /* MainMenu.xib */,
+				780225B321126FCD00F74262 /* Macro.entitlements */,
+				7883BBE821110BAB00820262 /* Info.plist */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		7883BBF121110C1D00820262 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78762BBF214C9F0000AA70B9 /* ServiceManagement.framework */,
+				781A04BF211EF6B000962FA5 /* IOKit.framework */,
+				7883BBF421110C2300820262 /* CoreFoundation.framework */,
+				7883BBF221110C1D00820262 /* CoreGraphics.framework */,
+				CE30FF83452E0425F0269503 /* libPods-Macro.a */,
+				C615CA1A49E099817053A971 /* libPods-VirtualKeyboard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78987DBF217694EF00A11FA1 /* Procedures */ = {
+			isa = PBXGroup;
+			children = (
+				78987DC22176951F00A11FA1 /* TerminateApplication.swift */,
+				78987DC42176965900A11FA1 /* RelaunchApplication.swift */,
+				78987DC6217696D600A11FA1 /* RecordOrStopMacro.swift */,
+				78987DC82176977C00A11FA1 /* PlayMacro.swift */,
+				78987DCC2176992400A11FA1 /* PresentAbout.swift */,
+				78987DD0217699B000A11FA1 /* SendFeedback.swift */,
+				78987DD2217699FA00A11FA1 /* ToggleRunAtStartup.swift */,
+				78987DD621769E2A00A11FA1 /* InitialAssembly.swift */,
+				78987DD821769E3E00A11FA1 /* RunningAssembly.swift */,
+				78987DDC2176A70200A11FA1 /* NegotiateAccessibilityAccess.swift */,
+				78987DDE2176A72500A11FA1 /* OpenAccessibilityPreferencePane.swift */,
+				78987DE02176A75300A11FA1 /* PromptUserToOpenPreferencePane.swift */,
+				78987DE22176A77A00A11FA1 /* PromptUserToConfirmAccessibilityAccess.swift */,
+			);
+			path = Procedures;
+			sourceTree = "<group>";
+		};
+		8B6EC523F735C8CCEC999921 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFFCA62DF6FB261C2E70D82F /* Pods-Macro.debug.xcconfig */,
+				674E35E35F689000AEDBE6B8 /* Pods-Macro.release.xcconfig */,
+				564CC7FCC4B0DA5A573E6DA5 /* Pods-VirtualKeyboard.debug.xcconfig */,
+				02FB7642EA5D908EC8F41D91 /* Pods-VirtualKeyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		780D6CF8214CA3E50084DAAD /* MacroLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780D6D04214CA3E60084DAAD /* Build configuration list for PBXNativeTarget "MacroLauncher" */;
+			buildPhases = (
+				780D6CF5214CA3E50084DAAD /* Sources */,
+				780D6CF6214CA3E50084DAAD /* Frameworks */,
+				780D6CF7214CA3E50084DAAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacroLauncher;
+			productName = MacroLauncher;
+			productReference = 780D6CF9214CA3E50084DAAD /* MacroLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7883BBDD21110BA900820262 /* Macro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7883BBEC21110BAB00820262 /* Build configuration list for PBXNativeTarget "Macro" */;
+			buildPhases = (
+				B2008DF179CA432F64EEE2CE /* [CP] Check Pods Manifest.lock */,
+				7883BBDA21110BA900820262 /* Sources */,
+				7883BBDB21110BA900820262 /* Frameworks */,
+				7883BBDC21110BA900820262 /* Resources */,
+				780D6D07214CA49A0084DAAD /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Macro;
+			productName = Macro;
+			productReference = 7883BBDE21110BA900820262 /* Macro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7883BBD621110BA900820262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Igor Muzyka";
+				TargetAttributes = {
+					780D6CF8214CA3E50084DAAD = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					7883BBDD21110BA900820262 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7883BBD921110BA900820262 /* Build configuration list for PBXProject "Macro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7883BBD521110BA900820262;
+			productRefGroup = 7883BBDF21110BA900820262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7883BBDD21110BA900820262 /* Macro */,
+				780D6CF8214CA3E50084DAAD /* MacroLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		780D6CF7214CA3E50084DAAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780D6CFE214CA3E60084DAAD /* Assets.xcassets in Resources */,
+				780D6D01214CA3E60084DAAD /* MainMenuLauncher.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7883BBDC21110BA900820262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7883BBE421110BAB00820262 /* Assets.xcassets in Resources */,
+				7883BBE721110BAB00820262 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2008DF179CA432F64EEE2CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Macro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		780D6CF5214CA3E50084DAAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780D6D0C214CA6390084DAAD /* MacroLauncherAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7883BBDA21110BA900820262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7827E083214C9C4C00793EC6 /* Launcher.swift in Sources */,
+				78168EE3211907AF008B31B5 /* MacroManager.swift in Sources */,
+				78168EFA21192336008B31B5 /* Convenience.swift in Sources */,
+				78987DCD2176992400A11FA1 /* PresentAbout.swift in Sources */,
+				78987DE12176A75300A11FA1 /* PromptUserToOpenPreferencePane.swift in Sources */,
+				78168EE5211907AF008B31B5 /* AppDelegate.swift in Sources */,
+				78987DC92176977C00A11FA1 /* PlayMacro.swift in Sources */,
+				78168EE8211907AF008B31B5 /* CGKeyboard.swift in Sources */,
+				784540B3211CFF8400E57B77 /* KeyCode.swift in Sources */,
+				78168EEB211907AF008B31B5 /* CoordinatorProtocol.swift in Sources */,
+				78EA2D5E2149F7F800D6C5EF /* Constants.swift in Sources */,
+				78987DD3217699FA00A11FA1 /* ToggleRunAtStartup.swift in Sources */,
+				78987DE32176A77A00A11FA1 /* PromptUserToConfirmAccessibilityAccess.swift in Sources */,
+				784540B7211CFFCC00E57B77 /* State.swift in Sources */,
+				78987DD721769E2A00A11FA1 /* InitialAssembly.swift in Sources */,
+				78987DD921769E3E00A11FA1 /* RunningAssembly.swift in Sources */,
+				78987DC7217696D600A11FA1 /* RecordOrStopMacro.swift in Sources */,
+				78168EEA211907AF008B31B5 /* EventInterceptorProtocol.swift in Sources */,
+				78987DD1217699B000A11FA1 /* SendFeedback.swift in Sources */,
+				78168EDF211907AF008B31B5 /* FrontmostApplicationWatcher.swift in Sources */,
+				784540AD211CFF8400E57B77 /* Modifiers.swift in Sources */,
+				784540AE211CFF8400E57B77 /* HotKey.swift in Sources */,
+				78168EEE211907AF008B31B5 /* AboutView.swift in Sources */,
+				78168EE2211907AF008B31B5 /* EventInterceptor.swift in Sources */,
+				784540B1211CFF8400E57B77 /* Event.swift in Sources */,
+				78987DC32176951F00A11FA1 /* TerminateApplication.swift in Sources */,
+				78987DDB2176A1FE00A11FA1 /* HotKeyService.swift in Sources */,
+				78987DBE217689F600A11FA1 /* MenuBar.swift in Sources */,
+				78987DC52176965900A11FA1 /* RelaunchApplication.swift in Sources */,
+				784540AC211CFF8400E57B77 /* Glyph.swift in Sources */,
+				78168EE4211907AF008B31B5 /* Coordinator.swift in Sources */,
+				7868DB4E21488FCA00FFFAF3 /* PreferencesMenu.swift in Sources */,
+				784540B2211CFF8400E57B77 /* Flags.swift in Sources */,
+				78168EED211907AF008B31B5 /* MainMenu.swift in Sources */,
+				784540B8211CFFCC00E57B77 /* Macro.swift in Sources */,
+				78987DDF2176A72500A11FA1 /* OpenAccessibilityPreferencePane.swift in Sources */,
+				784540AB211CFF8400E57B77 /* Shortcut.swift in Sources */,
+				78168EE9211907AF008B31B5 /* KeyboardProtocol.swift in Sources */,
+				78168EE6211907AF008B31B5 /* Definitions.swift in Sources */,
+				78987DDD2176A70200A11FA1 /* NegotiateAccessibilityAccess.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		780D6CFF214CA3E60084DAAD /* MainMenuLauncher.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780D6D00214CA3E60084DAAD /* Base */,
+			);
+			name = MainMenuLauncher.xib;
+			sourceTree = "<group>";
+		};
+		7883BBE521110BAB00820262 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7883BBE621110BAB00820262 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		780D6D05214CA3E60084DAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacroLauncher/MacroLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PAMBM76632;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MacroLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = igormuzyka.Macro.Launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		780D6D06214CA3E60084DAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacroLauncher/MacroLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PAMBM76632;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MacroLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = igormuzyka.Macro.Launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		7883BBEA21110BAB00820262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7883BBEB21110BAB00820262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7883BBED21110BAB00820262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFFCA62DF6FB261C2E70D82F /* Pods-Macro.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Macro/Macro.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PAMBM76632;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Macro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = igormuzyka.Macro.Macro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		7883BBEE21110BAB00820262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674E35E35F689000AEDBE6B8 /* Pods-Macro.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Macro/Macro.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PAMBM76632;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Macro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = igormuzyka.Macro.Macro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		780D6D04214CA3E60084DAAD /* Build configuration list for PBXNativeTarget "MacroLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780D6D05214CA3E60084DAAD /* Debug */,
+				780D6D06214CA3E60084DAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7883BBD921110BA900820262 /* Build configuration list for PBXProject "Macro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7883BBEA21110BAB00820262 /* Debug */,
+				7883BBEB21110BAB00820262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7883BBEC21110BAB00820262 /* Build configuration list for PBXNativeTarget "Macro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7883BBED21110BAB00820262 /* Debug */,
+				7883BBEE21110BAB00820262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7883BBD621110BA900820262 /* Project object */;
+}

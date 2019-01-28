@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Macro" customModuleProvider="target">
+            <connections>
+                <outlet property="about" destination="1vm-Gg-4ua" id="O6a-B8-AyO"/>
+                <outlet property="aboutView" destination="Oga-Hq-v1a" id="f04-5m-aDO"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <window title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="1vm-Gg-4ua">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" fullSizeContentView="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="1636" y="1113" width="480" height="296"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="Oga-Hq-v1a" customClass="AboutView" customModule="Macro" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="296"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ygt-4u-1ct" userLabel="Logo">
+                        <rect key="frame" x="20" y="20" width="128" height="236"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="236" id="9Si-32-wVh"/>
+                            <constraint firstAttribute="width" constant="128" id="RY8-Rq-3nx"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="AppIcon" id="g9d-Fq-l4y"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gPj-8M-0sr" userLabel="Application Name">
+                        <rect key="frame" x="192" y="241" width="96" height="35"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Macro" id="IXb-cd-sQe">
+                            <font key="font" size="30" name="HelveticaNeue-Medium"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="ddi-ix-D7v" userLabel="Version">
+                        <rect key="frame" x="166" y="220" width="148" height="21"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Version 1.0.0 (Build 1)" id="oS1-aS-xsO">
+                            <font key="font" size="14" name="HelveticaNeue-Medium"/>
+                            <color key="textColor" white="0.36981026785714288" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="4c2-FZ-n4c">
+                        <rect key="frame" x="166" y="20" width="296" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="BBr-j9-JOI"/>
+                        </constraints>
+                        <textFieldCell key="cell" selectable="YES" id="P7h-YL-RQv">
+                            <font key="font" size="10" name="HelveticaNeue-Light"/>
+                            <string key="title">Created by Igor Muzyka.
+
+Macro helps you perform text editing by recording the keyboard events you produce and reproducing them when you need by a shortcut.
+
+Special thanks to Sergi Callini for app and menu bar icons.</string>
+                            <color key="textColor" white="0.696715448943662" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4c2-FZ-n4c" firstAttribute="top" secondItem="ddi-ix-D7v" secondAttribute="bottom" constant="30" id="8nr-5R-Wvn"/>
+                    <constraint firstItem="Ygt-4u-1ct" firstAttribute="top" secondItem="Oga-Hq-v1a" secondAttribute="top" constant="40" id="CsO-6i-v0a"/>
+                    <constraint firstAttribute="bottom" secondItem="Ygt-4u-1ct" secondAttribute="bottom" constant="20" id="Mb2-Ei-KIV"/>
+                    <constraint firstItem="4c2-FZ-n4c" firstAttribute="leading" secondItem="Ygt-4u-1ct" secondAttribute="trailing" constant="20" id="Tg8-1y-KxW"/>
+                    <constraint firstAttribute="trailing" secondItem="4c2-FZ-n4c" secondAttribute="trailing" constant="20" id="d1a-en-JvN"/>
+                    <constraint firstAttribute="bottom" secondItem="4c2-FZ-n4c" secondAttribute="bottom" constant="20" id="lMz-I9-pd3"/>
+                    <constraint firstItem="ddi-ix-D7v" firstAttribute="centerX" secondItem="Oga-Hq-v1a" secondAttribute="centerX" id="oAo-bk-rkT"/>
+                    <constraint firstItem="Ygt-4u-1ct" firstAttribute="leading" secondItem="Oga-Hq-v1a" secondAttribute="leading" constant="20" id="pcN-tv-zxs"/>
+                    <constraint firstItem="gPj-8M-0sr" firstAttribute="top" secondItem="Oga-Hq-v1a" secondAttribute="top" constant="20" id="piG-pR-fwg"/>
+                    <constraint firstItem="gPj-8M-0sr" firstAttribute="centerX" secondItem="Oga-Hq-v1a" secondAttribute="centerX" id="qVX-4u-NkX"/>
+                    <constraint firstItem="ddi-ix-D7v" firstAttribute="top" secondItem="gPj-8M-0sr" secondAttribute="bottom" id="uSi-FG-N8A"/>
+                </constraints>
+                <connections>
+                    <outlet property="about" destination="4c2-FZ-n4c" id="kL6-kX-lbj"/>
+                    <outlet property="applicationName" destination="gPj-8M-0sr" id="mgb-vh-p4b"/>
+                    <outlet property="versionInfo" destination="ddi-ix-D7v" id="APM-Ta-rgJ"/>
+                </connections>
+            </view>
+            <point key="canvasLocation" x="-82" y="-188"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="AppIcon" width="128" height="128"/>
+    </resources>
+</document>
