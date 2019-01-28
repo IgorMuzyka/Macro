@@ -1,4 +1,4 @@
-![icon_128@2x](/Users/igor/Desktop/Macro/Macro/Assets.xcassets/AppIcon.appiconset/icon_128@2x.png)
+![icon_128@2x](/Macro/Assets.xcassets/AppIcon.appiconset/icon_128@2x.png)
 
 # Macro
 
