@@ -19,4 +19,4 @@ Macro is a menu bar application that records &amp; reproduces keyboard events by
 
 You can check the shortcuts in menubar.
 
-If you want to customize the shortcuts build the application yourself.
+If you want to customize the shortcuts clone the repo and customize whatever you want.
